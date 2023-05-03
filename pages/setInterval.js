@@ -11,6 +11,7 @@ const SetInterval = () => {
     });
     return (
         <>
+        <h1>Longitud del estado: {coords.length}</h1>
         {
             coords.map(item=>(
                 <>
