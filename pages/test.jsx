@@ -13,7 +13,8 @@ const Test = () => {
         }
         const id = navigator.geolocation.watchPosition(sucess, error, { enableHighAccuracy: true, timeout: 5000 });
         setId(id);
-    }, [])
+        console.log(coords);
+    }, [coords])
     return (
         <>
             <div>{errors.map(item => (
