@@ -8,7 +8,8 @@ const SetInterval = () => {
                 setCoords([...coords,[pos.coords.latitude,pos.coords.longitude]]);
             });
         },5000);
-    });
+        console.log(coords);
+    },[coords]);
     return (
         <>
         <h1>Longitud del estado: {coords.length}</h1>
