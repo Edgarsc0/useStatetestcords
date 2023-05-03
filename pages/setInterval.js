@@ -7,7 +7,7 @@ const SetInterval = () => {
             navigator.geolocation.getCurrentPosition((pos)=>{
                 setCoords([...coords,[pos.coords.latitude,pos.coords.longitude]]);
             });
-        },2000);
+        },5000);
     });
     return (
         <>
